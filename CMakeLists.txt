@@ -4,7 +4,7 @@ find_package(Qt5 COMPONENTS Core REQUIRED)
 add_definitions(-DQUAZIP_BUILD)
 
 file(GLOB_RECURSE SOURCES *.cpp *.c)
-add_library(quazip ${LIB_TYPE} ${SOURCES})
+add_library(quazip ${SOURCES})
 target_link_libraries(quazip z)
 target_include_directories(quazip PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 qt5_use_modules(quazip Core)
