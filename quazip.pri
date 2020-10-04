@@ -2,7 +2,7 @@ DEFINES += QUAZIP_BUILD
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 HEADERS += \
-        $$PWD/crypt.h \
+        $$PWD/minizip_crypt.h \
         $$PWD/ioapi.h \
         $$PWD/JlCompress.h \
         $$PWD/quaadler32.h \
@@ -22,6 +22,7 @@ HEADERS += \
 SOURCES += $$PWD/qioapi.cpp \
            $$PWD/JlCompress.cpp \
            $$PWD/quaadler32.cpp \
+           $$PWD/quachecksum32.cpp \
            $$PWD/quacrc32.cpp \
            $$PWD/quagzipfile.cpp \
            $$PWD/quaziodevice.cpp \
